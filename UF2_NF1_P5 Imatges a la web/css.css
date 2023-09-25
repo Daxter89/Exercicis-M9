@@ -1,0 +1,25 @@
+/* Estilo para las columnas */
+.column {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Clearfix para evitar que el contenido se solape */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+p{
+    size: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* Media query para dispositivos con una pantalla de ancho máximo de 768px */
+@media screen and (max-width: 768px) {
+    .column {
+        width: 50%;
+    }
+}
