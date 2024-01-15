@@ -1,8 +1,9 @@
 /* Estilo para las columnas */
 .column {
-    width: 100%;
-    padding: 10px;
+    width: 50%;
+    float: left;
     box-sizing: border-box;
+    padding: 10px;
 }
 
 /* Clearfix para evitar que el contenido se solape */
@@ -12,14 +13,23 @@
     display: table;
 }
 
-p{
-    size: 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+p {
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Media query para dispositivos con una pantalla de ancho máximo de 768px */
+/*Midas para la web sea responsive*/
 @media screen and (max-width: 768px) {
     .column {
-        width: 50%;
+        width: 100%;
+    }
+}
+.bar{
+    
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%; 
+        float: none; 
     }
 }
